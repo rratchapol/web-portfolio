@@ -124,6 +124,7 @@ export default function SpaceBackground3D() {
 				dpr={[1, 2]}
 				style={{ width: "100vw", height: "100vh" }}
 			>
+				<color attach="background" args={["#0a1124"]} />
 				<ambientLight intensity={0.6} color="#bcd1ff" />
 				<directionalLight
 					position={[10, 15, 20]}
