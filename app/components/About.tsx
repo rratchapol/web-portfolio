@@ -48,7 +48,7 @@ const About = () => {
               priority
             />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold space-text-gradient text-glow mb-4 text-center animate-fade-in-up" style={{animationDelay: '0.2s', animationFillMode: 'both'}}>John Doe</h1>
+          <h1 className="text-4xl md:text-5xl font-bold space-text-gradient text-glow mb-4 text-center animate-fade-in-up" style={{animationDelay: '0.2s', animationFillMode: 'both'}}>Ratchapol Rujiwatch</h1>
           <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-4 animate-fade-in-up" style={{animationDelay: '0.3s', animationFillMode: 'both'}}>Full Stack Developer & Space Enthusiast</h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl text-center mb-8 leading-relaxed animate-fade-in" style={{animationDelay: '0.4s', animationFillMode: 'both'}}>
             Crafting beautiful, responsive web applications with a passion for clean code and innovative solutions.
