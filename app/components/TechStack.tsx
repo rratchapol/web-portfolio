@@ -44,12 +44,14 @@ const TechStack = () => {
     <section ref={ref} id="techstack" className="section-animate section-spacing relative min-h-[60vh] flex items-center justify-center">
       {/* Space/Star background */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <ClientOnlyStarField />
         <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+        <h2 className="text-4xl font-bold space-text-gradient text-glow mb-12 text-center">Tech Stack</h2>
       </div>
+      <div className="space-card p-4 sm:p-8 md:p-10 max-w-1000xl w-full mx-auto relative overflow-hidden backdrop-blur-lg bg-black/30 animate-fade-in-up">
+
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto">
-        <div className="space-card p-6 bg-white/10 border border-blue-200/20 rounded-2xl shadow-lg">
+        <div className="space-card p-6 bg-purple-500 border border-purple-500 rounded-2xl shadow-lg">
           <h3 className="text-xl font-semibold text-blue-400 mb-6 text-center tracking-wide">Languages</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {techStack.languages.map((lang, idx) => (
@@ -61,7 +63,7 @@ const TechStack = () => {
           </div>
         </div>
         <div className="space-card p-6 bg-white/10 border border-purple-200/20 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-semibold text-purple-400 mb-6 text-center tracking-wide">Frameworks</h3>
+          <h3 className="text-xl font-semibold text-blue-400 mb-6 text-center tracking-wide">Frameworks</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {techStack.frameworks.map((fw, idx) => (
               <div key={idx} className="flex flex-col items-center bg-white/20 rounded-xl shadow p-4 w-28 h-28 justify-center card-hover border border-purple-100/30 hover:border-fuchsia-400/80 transition-all duration-300 neon-glow">
@@ -70,6 +72,7 @@ const TechStack = () => {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>

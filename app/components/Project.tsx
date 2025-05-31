@@ -7,15 +7,29 @@ const projects = [
 	{
 		name: "Portfolio Website",
 		description: "เว็บไซต์แนะนำตัวเอง Responsive ด้วย Next.js และ Tailwind CSS.",
-		image: "/file.svg",
-		github: "https://github.com/yourusername/portfolio",
+		image: "/image/project/gorilla_ideas.png",
+		github: "https://github.com/rratchapol/web-portfolio.git",
 		demo: "https://your-portfolio-demo.com",
 	},
 	{
 		name: "Task Manager App",
 		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
-		image: "/window.svg",
-		github: "https://github.com/yourusername/task-manager",
+		image: "/image/project/gorilla_ideas.png",
+		github: "https://github.com/rratchapol/web-portfolio.git",
+		demo: "https://your-taskmanager-demo.com",
+	},
+	{
+		name: "Task Manager App",
+		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
+		image: "/image/project/gorilla_ideas.png",
+		github: "https://github.com/rratchapol/web-portfolio.git",
+		demo: "https://your-taskmanager-demo.com",
+	},
+	{
+		name: "Task Manager App",
+		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
+		image: "/image/project/gorilla_ideas.png",
+		github: "https://github.com/rratchapol/web-portfolio.git",
 		demo: "https://your-taskmanager-demo.com",
 	},
 ];

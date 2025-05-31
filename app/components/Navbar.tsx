@@ -21,7 +21,9 @@ const Navbar = () => {
               >
                 {item}
               </Link>
+              
             ))}
+             <button>resume</button>
           </div>
         </div>
       </div>
