@@ -51,11 +51,17 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold space-text-gradient text-glow mb-4 text-center animate-fade-in-up" style={{animationDelay: '0.2s', animationFillMode: 'both'}}>Ratchapol Rujiwatch</h1>
           <h2 className="text-xl md:text-2xl text-blue-400 font-light mb-4 animate-fade-in-up" style={{animationDelay: '0.3s', animationFillMode: 'both'}}>Full Stack Developer</h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl text-center mb-8 leading-relaxed animate-fade-in" style={{animationDelay: '0.4s', animationFillMode: 'both'}}>
-            Hello, my name is Ratchapol Rujiwatch. Mynickname is Tao I am a full-stack developer with a passion for creating innovative and user-friendly web applications.
-            I am looking for an opportunity that allows me to further enhance my skills, collaborate with talented developers.
+            Hello! My name is <span className="font-semibold text-cyan-300">Ratchapol Rujiwatch</span> (Tao).<br/>
+            <br/>
+            I am a <span className="font-semibold text-blue-300">Full Stack Developer</span> passionate about building innovative,<br className="hidden md:inline"/> user-friendly web applications.<br/>
+            <br/>
+            I love to learn new technologies, solve real-world problems, and collaborate with talented people to create meaningful digital experiences.
           </p>
-          <div className="flex gap-6 text-2xl animate-fade-in-up" style={{animationDelay: '0.5s', animationFillMode: 'both'}}>
-
+         
+          <div className="mt-8 animate-fade-in-up" style={{animationDelay: '0.6s', animationFillMode: 'both'}}>
+            <span className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-cyan-600 via-blue-600 to-fuchsia-600 text-white text-base font-semibold shadow-lg tracking-wide backdrop-blur-md border border-cyan-200/20">
+              "Keep learning, keep building, keep dreaming."
+            </span>
           </div>
         </div>
       </div>
