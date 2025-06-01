@@ -5,7 +5,7 @@ const education = [
   {
     school: "King Mongkut's Institute of Technology Ladkrabang",
     faculty: "Computer Engineering",
-    year: "2020 - 2024",
+    year: "2021 - 2025",
   },
 ];
 

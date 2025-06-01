@@ -23,7 +23,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="/resume.pdf"
+              href="/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-600 via-blue-600 to-fuchsia-600 text-white font-bold shadow hover:from-cyan-400 hover:to-fuchsia-400 border border-cyan-200/20 transition-all duration-200 backdrop-blur-md"

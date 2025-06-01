@@ -5,34 +5,72 @@ import { useEffect, useRef } from "react";
 
 const projects = [
 	{
+		name: "Gorilla Ideas",
+		description: "Developed a CRM system for managing influencer and customer relationships.",
+		image: "/image/project/gorilla_ideas.png",
+		tech: ["Angular", "TypeScript", "TailwindCSS"],
+	},
+	{
+		name: "National Cancer Institute (NCI)",
+		description: "Developed a CRM system for the National Cancer Institute for internal use by employees.",
+		image: "/image/project/nci.png",
+		tech: ["Angular", "TypeScript", "TailwindCSS"],
+	},
+	{
+		name: "TRR",
+		description: "Developed an admin system for Thai Roong Ruang Group.",
+		image: "/image/project/trr.png",
+		tech: ["Angular", "TypeScript", "TailwindCSS", "Laravel", "Fullcalendar", "ApexChart", "Staticmap API"],
+	},
+	{
+		name: "SOS Wasty CRM",
+		description: "Developed a CRM system for SOS Wasty, a waste management company.",
+		image: "/image/project/xxx.png",
+		tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
+	},
+	{
+		name: "SOS Wasty Line LIFF",
+		description: "Developed a web application integrated with LINE LIFF for SOS Wasty.",
+		image: "/image/project/sos-liff.png",
+		tech: ["Next js", "TypeScript", "Ant Design", "Line LIFF"],
+	},
+	{
+		name: "Admin CRM",
+		description: "xxx.",
+		image: "/image/project/xxx.png",
+		tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
+	},
+	{
+		name: "Admin KMITL SHARE & CARE COMMUNITY EXCHANGE INITIATIVE ",
+		description: "Final project for KMITL, an admin system for managing community exchange initiatives.",
+		image: "/image/project/admin-final.png",
+		github: "https://github.com/rratchapol/KMITL-ADMIN-APP.git",
+		video: "https://youtu.be/d0b-Dv3yykc?si=i6kj3VkMDlqfZF2A",
+		tech: ["Angular", "TypeScript", "TailwindCSS"],
+	},
+	{
+		name: "Backend KMITL SHARE & CARE COMMUNITY EXCHANGE INITIATIVE",
+		description: "Final project for KMITL, a backend system for managing community exchange initiatives.",
+		image: "/image/project/backend-final.png",
+		github: "https://github.com/rratchapol/backend-kmitl.git",
+		video: "https://youtu.be/d0b-Dv3yykc?si=i6kj3VkMDlqfZF2A",
+		tech: ["Php", "Laravel", "JWT", "MySQL", "Docker"],
+	},
+	{
+		name: "To The Top Game",
+		description: "A simple game where you control a character to climb to the top of a tower.",
+		image: "/image/project/game.png",
+		github: "https://github.com/64010724Ratchapol/sfml",
+		video: "https://www.youtube.com/watch?v=cD72fvscZ9E&t=5s",
+		tech: ["C++", "SFML"],
+	},
+	{
 		name: "Portfolio Website",
-		description: "เว็บไซต์แนะนำตัวเอง Responsive ด้วย Next.js และ Tailwind CSS.",
-		image: "/image/project/gorilla_ideas.png",
+		description: "Web porfolio website showcasing my projects and skills.",
+		image: "/image/project/portfolio.png",
 		github: "https://github.com/rratchapol/web-portfolio.git",
-		// demo: "https://your-portfolio-demo.com",
-		tech: ["Next.js", "TailwindCSS", "TypeScript"],
-	},
-	{
-		name: "Task Manager App",
-		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
-		image: "/image/project/gorilla_ideas.png",
-		// github: "https://github.com/rratchapol/web-portfolio.git",
-		// demo: "https://your-taskmanager-demo.com",
-		tech: ["React", "TypeScript", "DndKit"],
-	},
-	{
-		name: "Task Manager App",
-		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
-		image: "/image/project/gorilla_ideas.png",
-		github: "https://github.com/rratchapol/web-portfolio.git",
-		demo: "https://your-taskmanager-demo.com",
-	},
-	{
-		name: "Task Manager App",
-		description: "แอปจัดการงานแบบ Kanban พร้อมระบบ Drag & Drop.",
-		image: "/image/project/gorilla_ideas.png",
-		github: "https://github.com/rratchapol/web-portfolio.git",
-		demo: "https://your-taskmanager-demo.com",
+		demo: "https://web-portfolio-gilt-eight.vercel.app/",
+		tech: ["next js", "TypeScript", "tailwind css", "three js"],
 	},
 ];
 
@@ -114,6 +152,16 @@ const Project = () => {
 										className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-700 via-blue-700 to-fuchsia-700 text-white hover:from-cyan-400 hover:to-blue-400 border border-cyan-400/30 hover:border-cyan-200 flex items-center gap-2 font-semibold shadow hover:shadow-fuchsia-400/20 transition-all duration-200 backdrop-blur-md"
 									>
 										<FaExternalLinkAlt /> <span>Live Demo</span>
+									</a>
+								)}
+								{project.video && (
+									<a
+										href={project.video}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-700 via-blue-700 to-fuchsia-700 text-white hover:from-cyan-400 hover:to-blue-400 border border-cyan-400/30 hover:border-cyan-200 flex items-center gap-2 font-semibold shadow hover:shadow-fuchsia-400/20 transition-all duration-200 backdrop-blur-md"
+									>
+										<FaExternalLinkAlt /> <span>video Demo</span>
 									</a>
 								)}
 							</div>

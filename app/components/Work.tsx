@@ -7,21 +7,24 @@ const workExperience = [
 		logo: "/image/ashatech.jpg",
 		position: "Intern Developer",
 		period: "2024 - 2024",
-		details: "During my internship, I primarily worked on BackOffice systems using Angular. I have developed web applications related to inventory management, employee check-in/check-out systems, and internal management systems for factories or companies. These projects have given me valuable experience in understanding organizational workflows and how to implement effective digital solutions.",
+		tech :"(Angular, Tailwind CSS)",
+		details: "* Developed internal CRM systems for influencer and customer management using Angular.\n * Integrated Google Login and created dynamic FormArray forms for data input.\n * Worked on projects for Gorillaideas and National Cancer Institute (NCI), including user role-based permission systems, API integration, and responsive UI design.\n * Contributed to inventory and employee management systems, gaining hands-on experience with organizational workflows and internal system architecture.",
 	},
 	{
 		company: "Asha Tech Corporation",
 		logo: "/image/ashatech.jpg",
 		position: "fullstack developer",
-		period: "2024 - 2024",
-		details: "During my internship, I primarily worked on BackOffice systems using Angular. I have developed web applications related to inventory management, employee check-in/check-out systems, and internal management systems for factories or companies. These projects have given me valuable experience in understanding organizational workflows and how to implement effective digital solutions.",
+		period: "2024 - 2025",
+		tech :"(Angular, Tailwind CSS, Laravel)",
+		details: "* Developed an internal admin system using Angular and Tailwind.\n * Built key components such as dashboards with charts, calendars, data tables, and dynamic forms.\n * Integrated map features to display locations using latitude and longitude.",
 	},
 	{
-		company: "Asha Tech Corporation",
+		company: "Ascend Co., Ltd.",
 		logo: "/image/ascend.jpg",
 		position: "Intern frontend Developer",
 		period: "2025 - Present",
-		details: "During my internship, I primarily worked on BackOffice systems using Angular. I have developed web applications related to inventory management, employee check-in/check-out systems, and internal management systems for factories or companies. These projects have given me valuable experience in understanding organizational workflows and how to implement effective digital solutions.",
+		tech :"(React, Next.js, Tailwind CSS,)",
+		details: "* Developed a CRM system and web integrated with LINE LIFF platform for SOS Wasty.\n * Built responsive UI using Next.js, Tailwind CSS, and Ant Design.\n * Implemented dynamic charts with Chart.js and connected frontend to RESTful APIs.",
 	},
 ];
 
@@ -74,11 +77,30 @@ const Work = () => {
 												<h3 className="text-2xl font-bold text-cyan-200 mb-1 drop-shadow-glow">{item.company}</h3>
 												<div className="flex flex-wrap gap-2 mb-1">
 													<span className="px-3 py-1 rounded-full bg-indigo-700/40 text-indigo-200 text-xs font-semibold tracking-wide border border-indigo-400/20 shadow">{item.position}</span>
+													<span className="px-3 py-1 rounded-full bg-blue-400 text-black text-xs font-semibold tracking-wide border border-indigo-400/20 shadow">{item.tech}</span>
 													<span className="px-3 py-1 rounded-full bg-slate-700/40 text-slate-200 text-xs font-medium border border-slate-400/20 shadow">{item.period}</span>
 												</div>
+												
 											</div>
 										</div>
-										<p className="text-slate-200 leading-relaxed text-base md:text-lg mt-2">{item.details}</p>
+										{/* เปลี่ยนจาก <p> เป็น <ul> ถ้า details เป็น bullet list */}
+										{item.details.trim().startsWith("*") ? (
+										<ul className="text-slate-200 leading-relaxed text-sm md:text-base mt-2 list-disc list-outside pl-5 space-y-1">
+											{item.details
+											.split('\n')
+											.filter(line => line.trim().startsWith('*'))
+											.map((line, i) => (
+												<li key={i}>
+												{line.replace(/^\s*\*\s?/, '')}
+												</li>
+											))}
+										</ul>
+										) : (
+										<p className="text-slate-200 leading-relaxed text-sm md:text-base mt-2">
+											{item.details}
+										</p>
+										)}
+
 									</div>
 								</div>
 							</div>

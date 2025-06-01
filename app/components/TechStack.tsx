@@ -1,6 +1,6 @@
 "use client"
 import { FaPython, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaReact } from "react-icons/fa";
-import { SiTypescript, SiGoland, SiC, SiAngular, SiNextdotjs, SiLaravel } from "react-icons/si";
+import { SiTypescript, SiGoland, SiC, SiAngular, SiNextdotjs, SiLaravel, SiCplusplus } from "react-icons/si";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import ClientOnlyStarField from "./ClientOnlyStarField";
@@ -10,6 +10,7 @@ const techStack = {
     { name: "Python", icon: <FaPython className="text-blue-500" /> },
     { name: "Go", icon: <SiGoland className="text-cyan-600" /> },
     { name: "C", icon: <SiC className="text-blue-800" /> },
+    { name: "C++", icon: <SiCplusplus className="text-blue-800" /> },
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-400" /> },
     { name: "Javascript", icon: <FaJs className="text-yellow-400" /> },
@@ -21,7 +22,7 @@ const techStack = {
     { name: "React", icon: <FaReact className="text-cyan-400" /> },
     { name: "Next js", icon: <SiNextdotjs className="text-black" /> },
     { name: "Laravel", icon: <SiLaravel className="text-red-500" /> },
-    { name: "Echo", icon: <Image src="/image/echo.png" alt="Echo" width={32} height={32} className="mb-1" /> },
+    // { name: "Echo", icon: <Image src="/image/echo.png" alt="Echo" width={32} height={32} className="mb-1" /> },
   ],
 };
 
