@@ -25,7 +25,7 @@ const projects = [
 	{
 		name: "SOS Wasty CRM",
 		description: "Developed a CRM system for SOS Wasty, a waste management company.",
-		image: "/image/project/xxx.png",
+		image: "/image/project/sos-admin.png",
 		tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
 	},
 	{
@@ -35,9 +35,9 @@ const projects = [
 		tech: ["Next js", "TypeScript", "Ant Design", "Line LIFF"],
 	},
 	{
-		name: "Admin CRM",
-		description: "xxx.",
-		image: "/image/project/xxx.png",
+		name: "SOS Wasty Landing Page",
+		description: "Developed a landing page for SOS Wasty to showcase their services.",
+		image: "/image/project/sos.png",
 		tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
 	},
 	{

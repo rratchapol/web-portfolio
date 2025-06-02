@@ -22,11 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[#0a1124]">
        <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-[#0a1124]`}> 
-        <Navbar />
         <main className="flex-1 flex flex-col container mx-auto z-10"> 
           {children}
          </main> 
-        <Footer />
       </body> 
     </html> 
   );
