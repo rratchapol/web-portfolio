@@ -34,12 +34,12 @@ const projects = [
 		image: "/image/project/sos-liff.png",
 		tech: ["Next js", "TypeScript", "Ant Design", "Line LIFF"],
 	},
-	// {
-	// 	name: "SOS Wasty Landing Page",
-	// 	description: "Developed a landing page for SOS Wasty to showcase their services.",
-	// 	image: "/image/project/sos.png",
-	// 	tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
-	// },
+	{
+		name: "SOS Wasty Landing Page",
+		description: "Developed a landing page for SOS Wasty to showcase their services.",
+		image: "/image/project/sos.png",
+		tech: ["Next js", "TypeScript", "Ant Design", "Chart.js"],
+	},
 	{
 		name: "Admin KMITL SHARE & CARE COMMUNITY EXCHANGE INITIATIVE ",
 		description: "Final project for KMITL, an admin system for managing community exchange initiatives.",
